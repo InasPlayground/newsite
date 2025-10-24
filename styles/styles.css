@@ -20,8 +20,8 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif, Syncopate;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif, Syncopate;
+  --body-font-family: roboto, roboto-fallback, sans-serif, syncopate;
+  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif, syncopate;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -298,14 +298,6 @@
   display: flex;
 }
 
-.sg-logo {
-  height: auto;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: static;
-}
-
 .sg-nav-menu {
   justify-content: flex-start;
   height: 60px;
@@ -401,7 +393,7 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
+  font-family: Syncopate;
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
@@ -516,6 +508,15 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.subheading {
+  margin-bottom: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---spacing--2x);
+  font-family: "Instrument Sans", sans-serif;
+  font-size: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---text-lg--lg-text-size);
+  line-height: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---text-lg--lg-text-line-height);
+  letter-spacing: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---text-lg--lg-text-letter-spacing);
+  color: color-mix(in srgb, currentColor 70%, transparent);
 }
 
 /* buttons */
@@ -693,4 +694,43 @@ img {
   grid-row-gap: 0px;
   flex-flow: row;
   display: flex;
+}
+
+.sg-logo {
+  z-index: 2;
+  padding: 1rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  display: flex;
+}
+
+.sg-logo.w--current {
+  align-items: center;
+}
+
+.sg-nav-menu {
+  flex-flow: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100px;
+  display: flex;
+  overflow: auto;
+}
+
+.sg-nav-menu-item {
+  padding: .125rem 1rem;
+  color: #0009;
+  font-size: .875rem;
+  text-decoration: none;
+  transition: all .2s;
+  display: block;
+}
+
+.sg-nav-menu-item:hover, .sg-nav-menu-item.w--current {
+  color: #000;
 }
