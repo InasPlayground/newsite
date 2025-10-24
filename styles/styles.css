@@ -244,6 +244,12 @@
   }
 }
 
+.nav-logo-icon {
+  aspect-ratio: 1;
+  flex: none;
+  height: 100%;
+}
+
 .w-dyn-empty {
   background-color: #ddd;
   padding: 10px;
@@ -255,6 +261,78 @@
 
 .wf-layout-layout {
   display: grid;
+}
+
+.nav-logo {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  color: inherit;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2.5rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav-logo:hover {
+  color: color-mix(in srgb, currentcolor 80%, transparent);
+}
+
+.nav-wrapper {
+  width: 100%;
+}
+
+.nav-wrapper.fixed-nav {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: fixed;
+}
+
+.nav-menu-list {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: row;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.sg-logo {
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: static;
+}
+
+.sg-nav-menu {
+  justify-content: flex-start;
+  height: 60px;
+  margin-left: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.sg-logo.w-current {
+  align-items: center;
+}
+
+.logo:hover {
+  color: color-mix(in srgb, currentColor 80%, transparent);
+}
+
+.nav-menu-list-item {
+  display: flex;
+  margin-bottom: 0 !important;
+}
+
+.nav-menu-dropdown {
+  position: static;
+}
+
+.nav-menu-dropdown.is-relative {
+  position: relative;
 }
 
 /* fallback fonts */
@@ -398,19 +476,18 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-a.button:hover,
-a.button:focus,
-button:hover,
+.button:hover, 
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: #f4fe8b;
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
   cursor: pointer;
 }
 
@@ -443,6 +520,7 @@ main img {
   height: 100%;
   width: 100%;
 }
+
 
 /* sections */
 main > .section {
