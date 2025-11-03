@@ -2,9 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
-- Block Library: https://main--{repo}--{owner}.aem.page/tools/sidekick/library.html?plugin=blocks
+- Preview: https://main--newsite--inasplayground.aem.page/
+- Live: https://main--newsite--inasplayground.aem.live/
 
 ## Documentation
 
