@@ -23,18 +23,21 @@
 .tabs .tabs-list button {
   flex: 0 0 max-content;
   margin: 0;
-  border: 1px solid turquoise;
+  border: 1px solid black;
   border-radius: 0;
   padding: 0.5em;
-  background-color: rgb(164, 244, 236);
-  color: black;
+  background-color: black;
+  color: turquoise;
   font-weight: bold;
+  font-style: normal;
   line-height: unset;
   text-align: initial;
+  text-decoration: none;
   text-overflow: unset;
-  overflow: unset;;
+  overflow: unset;
   white-space: unset;
   transition: background-color 0.2s;
+  align-items: center;
 }
 
 .tabs .tabs-list button p {
@@ -43,17 +46,17 @@
 
 
 .tabs .tabs-list button[aria-selected='true'] {
-  border-bottom: 1px solid pink;
-  background-color: turquoise;
+  border-bottom: 1px solid white;
+  background-color: black;
   cursor: initial;
 }
 
 .tabs .tabs-panel {
   margin-top: -1px;
   padding: 24px;
-  border: 1px solid #dadada;
+  border: 1px solid black;
   overflow: auto;
-  background-color: turquoise;
+  background-color: black;
 }
 
 .tabs .tabs-panel[aria-hidden='true'] {
