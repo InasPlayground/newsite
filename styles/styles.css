@@ -453,7 +453,7 @@ a:hover {
 }
 
 /* h1-headings */
-.h1-heading {
+.h1-heading-wrapper {
   margin-top: 0;
   margin-bottom: .3em;
   font-family:  Syncopate, sans-serif;
@@ -462,6 +462,23 @@ a:hover {
   font-weight: 400;
   letter-spacing: -.01em;
   text-wrap: balance;
+  text-align: center;
+}
+
+.h1-heading {
+  margin-top: 0;
+}
+
+.h2-heading {
+  margin-top: 0;
+  font-family: Syncopate, sans-serif;
+  font-size: 45.28px;
+  font-weight: 400;
+  text-wrap: balance;
+  text-align: left;
+  letter-spacing: -0.4528px;
+  text-wrap-mode: wrap;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -473,12 +490,14 @@ h1 {
   margin-top: 20px;
   font-size: 38px;
   line-height: 44px;
+  text-align: center;
 }
 
 h2 {
   margin-top: 20px;
-  font-size: 32px;
+  font-size: 2.8rem;
   line-height: 36px;
+  text-align: center;
 }
 
 h3 {
@@ -511,11 +530,13 @@ p {
 }
 
 .subheading {
-  margin-bottom: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---spacing--2x);
+  margin-bottom: 32px;
+  margin-top: 0px;
   font-family: "Instrument Sans", sans-serif;
-  font-size: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---text-lg--lg-text-size);
-  line-height: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---text-lg--lg-text-line-height);
-  letter-spacing: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1750489588918---text-lg--lg-text-letter-spacing);
+  text-align: center;
+  font-size: 18.08px;
+  line-height: 28.9333px;
+  letter-spacing: normal;
   color: color-mix(in srgb, currentColor 70%, transparent);
 }
 
@@ -569,12 +590,32 @@ button.secondary {
   color: var(--text-color);
 }
 
+.button-group.align-center {
+  justify-content: center;
+}
+
+.button-group {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: center;
+  display: flex;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .utility-margin-top-0 {
   margin-top: 0 !important;
+}
+
+.utility-text-align-center {
+  text-align: center;
+}
+
+.utility-margin-bottom-0 {
+  margin-bottom: 0;
 }
 
 main img {
@@ -638,6 +679,10 @@ img {
   border-radius: 1.25rem;
   max-width: 100%;
   display: inline-block;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
 }
 
 .image {
