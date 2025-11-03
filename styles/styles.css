@@ -478,7 +478,7 @@ a:hover {
   text-align: left;
   letter-spacing: -0.4528px;
   text-wrap-mode: wrap;
-  
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -504,6 +504,7 @@ h3 {
   margin-top: 20px;
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
 }
 
 h4 {
@@ -541,13 +542,17 @@ p {
 }
 
 /* buttons */
+.button {
+  display: inline-flex;
+}
+
 a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
+  border:3px solid black;
   border-radius: 2.4em;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
@@ -570,7 +575,7 @@ button {
 
 .button:hover, 
 button:focus {
-  background-color: #f4fe8b;
+  background-color: #eef1cf;
   outline-offset: 2px;
   outline-width: 2px;
   outline-style: solid;
@@ -602,12 +607,49 @@ button.secondary {
   display: flex;
 }
 
+.section.inverse-section {
+  background-color: #000;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .utility-margin-top-0 {
   margin-top: 0 !important;
+}
+
+.utility-margin-top-1 {
+  margin-top: 1rem !important;
+}
+
+.utility-margin-top-2 {
+  margin-top: 2rem !important;
+}
+
+.utility-margin-top-3 {
+  margin-top: 3rem !important;
+}
+
+.utility-margin-top-4 {
+  margin-top: 4rem !important;
+}
+
+.utility-margin-bottom-1 {
+  margin-bottom: 1rem !important;
+}
+
+.utility-margin-bottom-2 {
+  margin-bottom: 2rem !important;
+}
+
+.utility-margin-bottom-3 {
+  margin-bottom: 3rem !important;
+}
+
+.utility-margin-bottom-4 {
+  margin-bottom: 4rem !important;
 }
 
 .utility-text-align-center {
@@ -659,6 +701,11 @@ main > .section:first-of-type {
 
 /* section metadata */
 main .section.light,
+main .section.inverse-section { 
+  background-color: #000;
+  color: #fff;
+}
+
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
