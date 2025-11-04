@@ -264,11 +264,11 @@
 }
 
 .nav-logo {
-  grid-column-gap: 8px;
+  column-gap: 8px;
   grid-row-gap: 8px;
-  color: inherit;
+  color: #f7f8f5;
   justify-content: flex-start;
-  align-items: center;
+  align-items:;
   height: 2.5rem;
   text-decoration: none;
   display: flex;
@@ -280,6 +280,7 @@
 
 .nav-wrapper {
   width: 100%;
+  flex:1;
 }
 
 .nav-wrapper.fixed-nav {
@@ -291,7 +292,7 @@
 
 .nav-menu-list {
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  row-gap: 0px;
   flex-flow: row;
   margin-bottom: 0;
   padding-left: 0;
@@ -311,7 +312,7 @@
 }
 
 .logo:hover {
-  color: color-mix(in srgb, currentColor 80%, transparent);
+  color: color-mix(in srgb, currentcolor 80%, transparent);
 }
 
 .nav-menu-list-item {
@@ -393,7 +394,7 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: Syncopate;
+  font-family: Syncopate, sans-serif;
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
@@ -478,12 +479,6 @@ a:hover {
   text-align: left;
   letter-spacing: -0.4528px;
   text-wrap-mode: wrap;
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 10px;
-  font-weight: bold;
 }
 
 h1 {
@@ -538,7 +533,7 @@ p {
   font-size: 18.08px;
   line-height: 28.9333px;
   letter-spacing: normal;
-  color: color-mix(in srgb, currentColor 70%, transparent);
+  color: color-mix(in srgb, currentcolor 70%, transparent);
 }
 
 /* buttons */
@@ -707,7 +702,7 @@ main .section.inverse-section {
 }
 
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: rgb(247, 248, 245);
   margin: 0;
   padding: 40px 0;
 }
