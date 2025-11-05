@@ -1,12 +1,17 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #f7f8f5;
   width: 100%;
   z-index: 2;
-  position: fixed;
+  position: relative;
   height: var(--nav-height);
   display: flex;
   flex-direction: column;
+  font-family: InstrumentSans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 25.6px;
 }
 
 header nav {
@@ -71,7 +76,7 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: white;
   color: inherit;
   overflow: initial;
   text-overflow: initial;
@@ -91,7 +96,7 @@ header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   content: '';
   position: absolute;
-  background: currentcolor;
+  background: white;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon,
@@ -99,7 +104,7 @@ header nav[aria-expanded='false'] .nav-hamburger-icon::before,
 header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   height: 2px;
   border-radius: 2px;
-  background: currentcolor;
+  background: pink;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon::before {

@@ -1,11 +1,15 @@
 .tabs .tabs-list {
   display: flex;
-  gap: 0.5ch;
+  gap: 1ch;
   max-width: 100%;
   font-size: var(--body-font-size-xs);
   color: black;
   overflow-x: auto;
   align-items: center;
+  justify-content: center;
+  font-family: InstrumentSans, sans-serif;
+  letter-spacing: normal;
+  line-height: 32.4px;
 }
 
 @media (width >= 600px) {
@@ -21,23 +25,17 @@
 }
 
 .tabs .tabs-list button {
-  flex: 0 0 max-content;
   margin: 0;
   border: 1px solid black;
   border-radius: 0;
-  padding: 0.5em;
+  padding: 15px 25px;
   background-color: black;
-  color: turquoise;
-  font-weight: bold;
-  font-style: normal;
-  line-height: unset;
-  text-align: initial;
-  text-decoration: none;
-  text-overflow: unset;
-  overflow: unset;
-  white-space: unset;
+  color: #9a8a8a;
+  line-height: 19.5px;
+  text-align: center;
   transition: background-color 0.2s;
-  align-items: center;
+  border-bottom: 3px solid #9a8a8a; 
+  text-decoration-line: none;
 }
 
 .tabs .tabs-list button p {
@@ -46,7 +44,10 @@
 
 
 .tabs .tabs-list button[aria-selected='true'] {
+  color: white;
   border-bottom: 1px solid white;
+  border-left: 1px solid black;
+  border-right: black;
   background-color: black;
   cursor: initial;
 }
