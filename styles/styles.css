@@ -294,7 +294,7 @@
 }
 
 .nav-menu-list {
-  column-gap: 0px;
+  column-gap: 0px 0px;
   row-gap: 0px;
   flex-flow: row;
   margin-bottom: 0;
@@ -503,9 +503,14 @@ h1 {
 
 h2 {
   margin-top: 20px;
-  font-size: 2.8rem;
-  line-height: 36px;
+  font-size: 45.28px;
+  font-weight: 400;
+  letter-spacing: -0.4528px;
+  line-height: 47px;
   text-align: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  color: turquoise;
 }
 
 h3 {
