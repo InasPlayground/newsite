@@ -1,5 +1,10 @@
 .accordion details {
-  border: 1px solid #dadada;
+  border-bottom: 1px solid turquoise;
+  font-family: InstrumentSans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 28.9px;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
@@ -56,6 +61,5 @@
 }
 
 .accordion details[open] .accordion-item-body {
-  border-top: 1px solid #dadada;
   background-color: #f8f8f8;
 }
