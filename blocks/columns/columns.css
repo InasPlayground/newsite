@@ -33,13 +33,13 @@
   display: block;
   min-height: 220px;
   height: 100%;
+  width: 100%;
   align-items: stretch;
 }
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: flex-start;
-    column-fill: auto;
+    display: flex;
     flex-direction: unset;
     gap: 4px;
   }
