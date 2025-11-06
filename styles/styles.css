@@ -492,6 +492,20 @@ a:hover {
   text-align: left;
   line-height: 94.0167px;
 }
+.h1-heading-center {
+  margin-top: 20px;
+  text-wrap-mode: wrap;
+  text-wrap-style: balance;
+  justify-content: flex-start;
+  font-family: Syncopate, sans-serif;
+  align-items: center;
+  display: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 94.0167px;
+  font-size: 90.4px
+}
 
 .h2-heading {
   margin-top: 0;
@@ -632,7 +646,7 @@ p {
   font-family: "Instrument Sans", sans-serif;
   font-size: 24px;
   letter-spacing: normal;
-  line-height: 38.4px;
+   line-height: 38.4px;
  margin-bottom: 0px
 }
 
