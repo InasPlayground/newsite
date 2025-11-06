@@ -506,6 +506,19 @@ a:hover {
   padding-top: 1px;
   color:black;
 }
+.h2-heading-left {
+  margin-top: 0;
+  margin-bottom: 15.8px;
+  font-family: Syncopate, sans-serif;
+  font-size: 45.28px;
+  font-weight: 400;
+  text-wrap-style: balance;
+  text-align: left;
+  letter-spacing: -0.4528px;
+  line-height: 47.0833px;
+  padding-top: 1px;
+  color:black;
+}
 
 .h3-heading {
   text-align: left;
@@ -613,6 +626,14 @@ p {
   margin-bottom: 20px;
   letter-spacing: 0.144px;
   margin-top: 100px;
+}
+
+.rich-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  line-height: 38.4px;
+ margin-bottom: 0px
 }
 
 /* buttons */
@@ -791,7 +812,7 @@ main .section.highlight {
 main .section.full-width > div {
   max-width: 100%;
   padding: 0;
-  color: #fff;
+  background-color: rgb(247, 248, 245);
   align-items: center;
   justify-content: center;
 }
