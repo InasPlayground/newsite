@@ -481,17 +481,29 @@ a:hover {
 }
 
 .h2-heading {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 15.8px;
   font-family: Syncopate, sans-serif;
   font-size: 45.28px;
   font-weight: 400;
-  text-wrap: balance;
-  text-align: left;
+  text-wrap-style: balance;
+  text-align: center;
   letter-spacing: -0.4528px;
   line-height: 47.0833px;
-  text-wrap-mode: wrap;
+  
   color:black;
+}
+
+.h3-heading {
+  text-align: left;
+  font-family: Syncopate, sans-serif;
+  font-size: 45.28px;
+  font-weight: 400;
+  letter-spacing: -0.4528px;
+  text-wrap-mode: wrap;
+  line-height: 47.0833px;
+  text-wrap-style: balance;
+  align-items: end;
 }
 
 h1 {
@@ -517,7 +529,7 @@ h3 {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  font-color: #3a3c37;
+  color: #3a3c37;
 }
 
 h4 {
@@ -548,13 +560,24 @@ p {
 
 .subheading {
   margin-bottom: 32px;
-  margin-top: 0px;
+  margin-top: 0;
   font-family: "Instrument Sans", sans-serif;
   text-align: center;
   font-size: 18.08px;
   line-height: 28.9333px;
   letter-spacing: normal;
   color: color-mix(in srgb, currentcolor 70%, transparent);
+}
+
+.eyebrow {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14.4px;
+  font-weight: 400;
+  color:#8b8585;
+  text-transform: uppercase;
+  line-height: 18.7px;
+  margin-bottom: 20px;
+  letter-spacing: 0.144px;
 }
 
 /* buttons */
