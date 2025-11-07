@@ -1,7 +1,6 @@
 .columns > div {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid;
 }
 
 
@@ -11,6 +10,10 @@
   border: 0;
   display: block;
   object-fit: cover;
+}
+
+.columns.border-bottom {
+  border-bottom: 1px solid black;
 }
 
 .columns > div > div {
