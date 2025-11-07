@@ -1,7 +1,9 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid;
 }
+
 
 .columns img {
   width: 100%;
@@ -36,6 +38,7 @@
   width: 100%;
   align-items: stretch;
 }
+
 
 @media (width >= 900px) {
   .columns > div {
