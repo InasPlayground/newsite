@@ -674,6 +674,7 @@ p {
 /* buttons */
 .button {
   display: inline-flex;
+  cursor: pointer;
 }
 
 a.button:any-link,
@@ -687,14 +688,15 @@ button {
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  letter-spacing: normal;
+  line-height: 19.2px;
+  box-shadow: black 0 0 0 0.4px inset, rgb(221, 221, 141) 4px 4px 0 0;
 }
 
 .button-label {
@@ -705,10 +707,8 @@ button {
 
 .button:hover, 
 button:focus {
-  background-color: #eef1cf;
   outline-offset: 2px;
   outline-width: 2px;
-  outline-style: solid;
   cursor: pointer;
 }
 
@@ -727,6 +727,21 @@ button.secondary {
 
 .button-group.align-center {
   justify-content: center;
+}
+
+/* Button positioned at top-left */
+.button-top-left {
+  position: fixed;
+  top: 0;
+  left: 62px;
+  z-index: 998;
+}
+
+.button-top-right {
+  position: fixed;
+  top: 15px;
+  right: 35px;
+  z-index: 998;
 }
 
 .button-group {
