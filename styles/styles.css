@@ -269,6 +269,7 @@
 }
 
 .nav-logo {
+  color:inherit;
   column-gap: 8px;
   grid-row-gap: 8px;
   background-color: #f7f8f5;
@@ -285,7 +286,7 @@
 
 .nav-wrapper {
   width: 100%;
-  flex:1;
+  flex:0;
   background-color: #f7f8f5;
   justify-content: flex-start;
   align-items: flex-start;
@@ -301,8 +302,6 @@
 }
 
 .nav-menu-list {
-  column-gap: 0px 0px;
-  row-gap: 0px;
   flex-flow: row;
   margin-bottom: 0;
   padding-left: 0;
@@ -756,6 +755,11 @@ button.secondary {
 
 .utility-margin-top-0 {
   margin-top: 0 !important;
+}
+
+.utility-margin-top-right-0 {
+  margin-top: 0 !important;
+  margin-right: 0 !important;
 }
 
 .utility-margin-top-1 {
