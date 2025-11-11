@@ -24,10 +24,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
   line-height: 29.6px;
   letter-spacing: normal;
+  padding-top: 0;
+  width: 755.383px;
 }
 
 .columns > div > .columns-img-col {
@@ -40,6 +42,7 @@
   height: 100%;
   width: 100%;
   align-items: stretch;
+  aspect-ratio: 1/1;
 }
 
 
