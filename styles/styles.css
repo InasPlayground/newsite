@@ -557,7 +557,12 @@ a:hover {
   align-items: center;
   text-align: center;
   line-height: 94.0167px;
-  font-size: 90.4px
+  font-size: 90.4px;
+  letter-spacing: -0.904px;
+  margin-bottom: 27.12px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 .h2-heading {
@@ -717,6 +722,15 @@ button.secondary {
   color: var(--text-color);
 }
 
+.button-container {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.button-container:last-child {
+  margin-right: 0;
+}
+
 .button-group.align-center {
   justify-content: center;
 }
@@ -728,7 +742,7 @@ button.secondary {
   left: 62px;
   z-index: 998;
 }
-
+/* Button positioned at top-right */
 .button-top-right {
   position: fixed;
   top: 15px;
@@ -742,8 +756,19 @@ button.secondary {
   align-self: stretch;
   align-items: center;
   display: flex;
+  margin-top: 2px;
+  grid-column-gap: 0.5px;
+  grid-row-gap: 0.5px;
 }
 
+.button-group1 {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
 .section {
   margin-bottom: 0;
   margin-top: 0;
