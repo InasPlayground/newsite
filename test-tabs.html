@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Block Test</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/blocks/tabs/tabs.css">
+</head>
+<body>
+    <main>
+        <div class="section">
+            <div>
+                <h1>Tabs Block Test</h1>
+                
+                <div class="tabs block" data-block-name="tabs" data-block-status="loaded">
+                    <div>
+                        <div>Regular Tab</div>
+                        <div>
+                            <p>This is regular tab content with some text.</p>
+                            <p>It can contain multiple paragraphs.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Image-Text Tab</div>
+                        <div>
+                            <p>image-text</p>
+                            <p><picture>
+                                <img src="/img/5ea48dab-5c5a-47ee-875e-a568e901a0c9.avif" alt="Test image">
+                            </picture></p>
+                            <p>This is the text content that appears below the image.</p>
+                            <p>You can add multiple paragraphs here as well.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Another Regular Tab</div>
+                        <div>
+                            <p>More regular content in another tab.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type="module">
+        import decorate from '/blocks/tabs/tabs.js';
+        
+        // Wait for DOM to be ready
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabsBlock = document.querySelector('.tabs');
+            if (tabsBlock) {
+                decorate(tabsBlock);
+            }
+        });
+    </script>
+</body>
+</html>
