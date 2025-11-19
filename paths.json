@@ -1,16 +1,16 @@
 {
   "mappings": [
-    "/content/UEstuff/UEstuff/:/",
-    "/content/UEstuff/UEstuff/configuration:/.helix/config.json",
-    "/content/UEstuff/UEstuffy/navigation:/navigation.json",
-    "/content/UEstuff/UEstuff/metadata:/metadata.json",
-    "/content/UEstuff/UEstuff/placeholders:/placeholders.json",
-    "/content/UEstuff/UEstuff/taxonomy:/taxonomy.json",
-    "/content/UEstuff/UEstuff/redirects:/redirects.json",
-    "/content/UEstuff/UEstuff/query-index:/query-index.json",
-    "/content/UEstuff/UEstuff/library/blocks:/blocks.json"
+    "/content/UEstuff/:/",
+    "/content/UEstuff/configuration:/.helix/config.json",
+    "/content/UEstuff/navigation:/navigation.json",
+    "/content/UEstuff/metadata:/metadata.json",
+    "/content/UEstuff/placeholders:/placeholders.json",
+    "/content/UEstuff/taxonomy:/taxonomy.json",
+    "/content/UEstuff/redirects:/redirects.json",
+    "/content/UEstuff/query-index:/query-index.json",
+    "/content/UEstuff/library/blocks:/blocks.json"
   ],
   "includes": [
-    "/content/extweb-academy/"
+    "/content/UEstuff/"
   ]
 }
